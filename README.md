@@ -1,16 +1,12 @@
-# nearby_places
+# Nearby Places
 
-A new Flutter project.
+Flutter project - Places Nearby Location
 
-## Getting Started
+## Config
+- Put the Google Key API in the File ```lib/services/placeService.dart```
 
-This project is a starting point for a Flutter application.
+## Screenshot
+- ![Screenshot](screenshot/screen1.png)
+- ![Screenshot](screenshot/screen2.png)
+- ![Screenshot](screenshot/screen3.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

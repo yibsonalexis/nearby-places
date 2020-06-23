@@ -75,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
-                Spacer(),
+                // Spacer(),
                 Container(
                   margin: EdgeInsets.only(top: 30),
                   width: size.width * 0.9,
@@ -231,13 +231,13 @@ class LoginPainter extends CustomPainter {
 
     var path = Path();
 
-    path.moveTo(0, size.height * 0.6);
-    path.quadraticBezierTo(size.width * 0.1, size.height * 0.8,
-        size.width * 0.3, size.height * 0.7);
-    path.quadraticBezierTo(size.width * 0.55, size.height * 0.6,
-        size.width * 0.7, size.height * 0.79);
+    path.moveTo(0, size.height * 0.7);
+    path.quadraticBezierTo(size.width * 0.1, size.height * 0.9,
+        size.width * 0.3, size.height * 0.8);
+    path.quadraticBezierTo(size.width * 0.55, size.height * 0.7,
+        size.width * 0.7, size.height * 0.89);
     path.quadraticBezierTo(
-        size.width * 0.85, size.height * 1, size.width, size.height * 0.85);
+        size.width * 0.85, size.height * 1, size.width, size.height * 0.95);
     path.lineTo(size.width, 0);
     path.lineTo(0, 0);
     canvas.drawPath(path, paint);
