@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-// import 'package:geolocator/geolocator.dart';
 import 'package:latlong/latlong.dart';
 import 'package:nearby_places/models/placeModel.dart';
-import 'package:nearby_places/preferences/userPreference.dart';
 import 'package:nearby_places/services/placeService.dart';
 import 'package:nearby_places/widgets/placeCard.dart';
 
@@ -13,7 +11,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final UserPreferences _pref = UserPreferences();
   final PlaceService _placeService = new PlaceService();
   LatLng _initialLocation = LatLng(6.2, -75.5);
 
@@ -49,7 +46,6 @@ class _HomePageState extends State<HomePage> {
             FutureBuilder(
               future: _placeService.getPlaces(
                   _initialLocation.latitude, _initialLocation.longitude),
-              // initialData: InitialData,
               builder: (BuildContext context,
                   AsyncSnapshot<List<PlacesModel>> snapshot) {
                 List<PlacesModel> _places = List<PlacesModel>();
