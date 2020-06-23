@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppTheme {
   AppTheme();
 
-  static const Color primaryColor = Color(0xFFf67262);
+  static const Color primaryColor = Color(0xFF19a183);
   static const Color secondaryColor = Color(0xFFF78361);
   static const Color thirdColor = Color(0xFFF54B64);
   static const Color nearlyWhite = Color(0xFFFAFAFA);
@@ -11,8 +11,8 @@ class AppTheme {
   static const Color background = Color(0xFFFDF8F6);
 
   static const List<Color> colorsGradient = <Color>[
-    Color(0xFF633AF6),
-    Color(0xFF519FF7),
+    Color(0xFF8de0ce),
+    Color(0xFF053a34),
   ];
 
   static const InputDecoration inputDecoration = InputDecoration(
